@@ -1,0 +1,18 @@
+{
+  "editor.formatOnSave": true,
+  "python.formatting.provider": "black",
+  "python.languageServer": "Default",
+  "python.analysis.typeCheckingMode": "basic",
+  "[python]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    }
+  },
+  "python.linting.flake8Args": [
+    "--max-line-length=119",
+    "--extend-ignore=E203", // black compat
+    "--per-file-ignores=**/__init__.py:F401" // ignore unused imports in init
+  ],
+  "python.linting.flake8Enabled": true,
+  "python.linting.enabled": true
+}
