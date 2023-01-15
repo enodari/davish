@@ -46,7 +46,6 @@ def do_PUT(
     try:
         uploaded_item = context.storage.item_upload(
             item_href,
-            maybe_item,
             collection,
             content,
         )

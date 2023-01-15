@@ -78,7 +78,6 @@ class BaseStorage:
     def item_upload(
         self,
         href: str,
-        item: Optional[Item],
         collection: Collection,
         content: str,
     ) -> Optional[Item]:
